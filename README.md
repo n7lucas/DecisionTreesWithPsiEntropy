@@ -8,13 +8,13 @@ This code is designed to create a decision tree using a class structure in Pytho
 
 <h2>File Structure</h2>
 
-<p>The code consists of two files: "BinaryTree" and "BinaryTreeNode". The "BinaryTree" file contains the main class structure for creating the decision tree, while the "BinaryTreeNode" file contains the class structure for each node in the tree.</p>
+<p>The code consists of two files: <span style="background-color: #f2f2f2">"BinaryTree"</span> and "BinaryTreeNode". The "BinaryTree" file contains the main class structure for creating the decision tree, while the "BinaryTreeNode" file contains the class structure for each node in the tree.</p>
 
 <h2>Class Structure</h2>
 
 <h4>BinaryTreeNode:</h4>
 
-As previously mentioned, the <span style="background-color: #f2f2f2">"BinaryTree"</span> class is responsible for creating each node in the tree, this class is only called by BinaryTree class that has the methods that will be used,its attributes and methods are: 
+As previously mentioned, the "BinaryTreeNode" class is responsible for creating each node in the tree, this class is only called by BinaryTree class that has the methods that will be used,its attributes and methods are: 
 
 
 <p><strong>Attributes:</strong></p>
@@ -29,10 +29,40 @@ As previously mentioned, the <span style="background-color: #f2f2f2">"BinaryTree
 
 <p><strong>Methods:</strong></p>
 <ul>
+ <li>__init__(self, index, left=None, right=None, children = [], parent = []): Responsible for creating the node, receives the index value of the node, as well as its left and right children, a list for its children and another for its parent node.</li>
+
+<li>__repr__(self): Method that returns a string representation of an object. </li>
+
+<li>__eq__(self, other): It takes two objects as an argument and returns a boolean value indicating whether the two objects are equal.</li>
+
+<li>__str__(self, level=0):  It returns a string representation of the object that is suitable for display to end-users.</li>
+         
+<li>printTree(self): Used to call the printBTree method to print the tree, structure Example:   1</li>
+                                                                                            ___/ \__
+                                                                                           3        4
+                                                                                       ___/ \__    / \
+                                                                                      8        9  5   6
+                                                                                     / \      / \
+                                                                                    12   13  10   11
+                                                                                            /  \
+                                                                                           14    15
+</ul>
+
+<h4>BinaryTree:</h4>
+
+<p><strong>Attributes:</strong></p>
+<ul>
+    <li>root_index: Represents the root index of the note, or the first Node</li>
+    <li>nodes{}: a Dict that contains all nodes created in the tree</li>
+    
+</ul>
+
+<p><strong>Methods:</strong></p>
+<ul>
 <li>__init__(self, root_index=None): Initializes the tree with the given root node (which defaults to None if not provided)</li>
 </ul>
-<strong>2 Methods to traversed in different ways were developed: in Order and Pos Order traversal, to ilustrate considere the follow image:</strong>
-<br>
+2 Methods to traversed in different ways were developed: in Order and Pos Order traversal, to ilustrate considere the follow image:
+
 <img src="tree.png">
 
 <ul>
@@ -52,7 +82,6 @@ As previously mentioned, the <span style="background-color: #f2f2f2">"BinaryTree
 
 </ul>
 <h2>Usage: </h2>
-
 
 <p>In Progress...</p>
 
