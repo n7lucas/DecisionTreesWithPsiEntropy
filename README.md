@@ -31,8 +31,8 @@ As previously mentioned, the <span style="background-color: #f2f2f2">"BinaryTree
 <ul>
 <li>__init__(self, root_index=None): Initializes the tree with the given root node (which defaults to None if not provided)</li>
 </ul>
-2 Methods to traversed in different ways were developed: in Order and Pos Order traversal, to ilustrate considere the follow image:
-
+<strong>2 Methods to traversed in different ways were developed: in Order and Pos Order traversal, to ilustrate considere the follow image:</strong>
+<br>
 <img src="tree.png">
 
 <ul>
