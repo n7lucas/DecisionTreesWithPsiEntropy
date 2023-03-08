@@ -14,7 +14,7 @@ This code is designed to create a decision tree using a class structure in Pytho
 
 <h4>BinaryTreeNode:</h4>
 
-As previously mentioned, the "BinaryTreeNode" class is responsible for creating each node in the tree, this class is only called by BinaryTree class that has the methods that will be used,its attributes and methods are: 
+As previously mentioned, the <span style="background-color: #f2f2f2">"BinaryTree"</span> class is responsible for creating each node in the tree, this class is only called by BinaryTree class that has the methods that will be used,its attributes and methods are: 
 
 
 <p><strong>Attributes:</strong></p>
