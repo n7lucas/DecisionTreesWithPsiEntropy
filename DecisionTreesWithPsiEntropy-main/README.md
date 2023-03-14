@@ -26,7 +26,7 @@ X, y = make_moons(n_samples=100, shuffle=True, noise=0.1, random_state=1)
 </pre>
 
 
-<p> To separate the training and test data we will use the bla function, and as it only accepts the pandas dataframe format, the data X, and y originally distributed in a numpy array are converted to a pandas dataset and then converted again to the format from numpy array</p>
+<p> To separate the training and test data we will use the mytrain_test_split() function, and as it only accepts the pandas dataframe format, the data X, and y originally distributed in a numpy array are converted to a pandas dataset and then converted again to the format from numpy array</p>
 <pre>
     X = pd.DataFrame(X)
     y = pd.DataFrame(y, columns=['classe'])
