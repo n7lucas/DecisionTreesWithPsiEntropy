@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 14 10:53:11 2023
 
-@author: PC
-"""
 
 """ Main Application part"""
 
@@ -80,19 +76,18 @@ y_train = y_train.to_numpy()
 
 
 print("Beginning P2 Classification")
-model1 = P2(activation='heaviside', optimizer="montecarlo") #MUDAR NO GRID PARA 0.5 SE USAR SIGMOIDE
-best_params_calc,list_S, list_r = model1.run(X_train, y_train, X_train, y_train)
+model = P2(activation='heaviside', optimizer="montecarlo") 
+best_params_calc,list_S, list_r = model.run(X_train, y_train, X_train, y_train)
 
 model1.tree.printTreer()
-plot_clf(model1, y_train, X_train, activationname='heaviside')
+plot_clf(model, y_train, X_train, activationname='heaviside')
 
 #arr = np.array([0.954831, -0.134719])
-#caminho = model1.path(arr, 0)
-#leaf = model1.leaf(arr,0)
-#final = model1.leaf(arr, 0)
-#Arvore = model1.tree
+#caminho = model.path(arr, 0)
+#leaf = model.leaf(arr,0)
+#final = model.leaf(arr, 0)
+#Arvore = model.tree
 """-----------------------------------------------------Plot and Tree rendering Stuff-----------------------------"""
-#plot_clf(model1, y_train, X_train, activationname='heaviside')
-#model1.Dot_Tree2(model1.root)
-#Image(filename='C:\\Users\\PC\\Documents\\Material Tese\\project1\\arvore_totalnova.dot.png')
+#plot_clf(model, y_train, X_train, activationname='heaviside')
+
 
