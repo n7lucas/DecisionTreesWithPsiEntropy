@@ -39,6 +39,7 @@ y_train = y_train.to_numpy()</p>
 <p>Com o modelo criado é possivel acessar algumas informações sobre o classificador</p>
 
 <p>Retornar nodes gerados pela arvore</p>
+ ``print("Hello World!")``
 <p> nodes = model.tree.nodes</p>
 
 <p>Retornar uma lista com os nodes que um determinado input x percorreu na arvore até chegar a uma folha</p>
